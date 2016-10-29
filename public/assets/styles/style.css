@@ -1,2 +1,449 @@
+/* line 3, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block; }
+
+/* line 6, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+audio, canvas, video {
+  display: inline-block; }
+
+/* line 9, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/* line 13, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+[hidden] {
+  display: none; }
+
+/* line 16, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+/* line 21, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+body {
+  margin: 0; }
+
+/* line 25, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+a:focus {
+  outline: thin dotted; }
+
+/* line 27, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+a:active, a:hover {
+  outline: 0; }
+
+/* line 30, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* line 34, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/* line 37, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+b, strong {
+  font-weight: bold; }
+
+/* line 40, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+dfn {
+  font-style: italic; }
+
+/* line 43, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/* line 48, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/* line 52, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/* line 56, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+pre {
+  white-space: pre-wrap; }
+
+/* line 59, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/* line 62, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+small {
+  font-size: 80%; }
+
+/* line 65, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 71, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em; }
+
+/* line 78, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+sub {
+  bottom: -0.25em; }
+
+/* line 81, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+img {
+  border: 0; }
+
+/* line 84, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* line 87, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+figure {
+  margin: 0; }
+
+/* line 90, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/* line 95, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+legend {
+  border: 0;
+  padding: 0; }
+
+/* line 99, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+/* line 104, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+button, input {
+  line-height: normal; }
+
+/* line 107, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+button, select {
+  text-transform: none; }
+
+/* line 110, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+button, html input[type="button"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+/* line 115, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+/* line 119, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+/* line 123, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+/* line 126, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box; }
+  /* line 131, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+  input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+
+/* line 134, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* line 138, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+/* line 142, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 146, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+* {
+  box-sizing: border-box; }
+  /* line 149, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+  *::after, *::before {
+    box-sizing: border-box; }
+
+/* line 153, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+body {
+  font-family: 'Roboto Condensed', Avenir, sans-serif;
+  color: #23DC74;
+  background: #141516;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 160, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+main {
+  overflow: hidden; }
+
+/* line 163, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+a {
+  text-decoration: none;
+  color: #f0f0f0;
+  outline: none; }
+  /* line 167, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+  a:hover, a:focus {
+    color: #262626; }
+
+/* line 170, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+.hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  pointer-events: none; }
+
+/* line 179, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+.btn {
+  font-size: 0.885em;
+  font-weight: normal;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0.5em 0;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  pointer-events: auto;
+  color: #fff;
+  border: 0;
+  background: none;
+  font-family: 'Roboto Condensed', Avenir, sans-serif;
+  transition: opacity 0.2s; }
+  /* line 196, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+  .btn:focus {
+    outline: none; }
+  /* line 198, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+  .btn:hover {
+    opacity: 0.5; }
+
+/* line 201, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+.btn--trigger {
+  margin: 0 0.5em;
+  border-bottom: 1px solid; }
+
+/* line 206, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+.btn--prev {
+  margin: 0 1.5em 0 0.5em; }
+
+/* line 209, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+.btn--hidden {
+  pointer-events: none;
+  opacity: 0; }
+
+/* line 213, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+.actions {
+  position: absolute;
+  right: 6vw;
+  bottom: 60px;
+  text-align: center; }
+
+/* line 219, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+.no-js .actions {
+  display: none; }
+
+/* line 224, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+.js .footer-block {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0; }
+
+/* Header */
+/* line 253, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+.page-header {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  text-align: center;
+  background: #141516 url("../images/mouse.svg") no-repeat left 50% bottom 40px; }
+
+/* line 275, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+.page-header__title {
+  font-family: 'Abril Fatface', serif;
+  font-size: 5vw;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 10;
+  margin: 0; }
+  /* line 285, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+  .page-header__title span {
+    font-weight: normal;
+    color: #f0f0f0; }
+
+/* Section Links */
+/* line 293, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+.section-link {
+  font-size: 1.25em;
+  position: absolute;
+  top: 60px;
+  left: 6vw;
+  cursor: pointer;
+  color: #fff;
+  transition: opacity 0.2s; }
+  /* line 302, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+  .section-link:hover {
+    opacity: 0.5;
+    color: #fff; }
+
+/* Content */
+/* line 308, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+.content {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  min-height: 500px;
+  padding: 7em 0; }
+
+/* line 326, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+.js .content {
+  overflow: hidden; }
+
+/* line 329, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+.content--modifier {
+  color: #141516;
+  background: #e8e8f1; }
+  /* line 332, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+  .content--modifier .btn--trigger, .content--modifier .section-link {
+    color: #333; }
+
+/* line 336, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+.title {
+  margin: 0;
+  font-size: 10vw;
+  position: relative; }
+
+/* line 341, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+.title--centered {
+  width: 100%;
+  text-align: center; }
+
+/* line 345, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+.js .title--centered {
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+/* line 350, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+.title--modifier {
+  font-family: 'Roboto Condensed', Avenir, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.25vw; }
+
+/* line 355, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+[class*="letter"] {
+  display: block;
+  position: relative;
+  -ms-flex: none;
+  flex: none;
+  white-space: pre; }
+
+/* Slideshow */
+/* line 365, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+/* line 370, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+.slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0 6vw; }
+
+/* line 376, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+.js .slide {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-align: center;
+  align-items: center; }
+  /* line 386, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+  .js .slide:not(.slide--current) {
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+    opacity: 0; }
+
+@media screen and (max-width: 60em) {
+  /* line 394, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+  .page-header {
+    background: #141516; }
+  /* line 396, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+  .page-header__title {
+    font-size: 2.65em; }
+  /* line 398, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+  .content--modifier2 {
+    display: none; }
+  /* line 400, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+  .content {
+    height: calc(100vh - 124px); } }
+
+/* line 403, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+.letter-effect {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 /*# sourceMappingURL=style.css.map */
