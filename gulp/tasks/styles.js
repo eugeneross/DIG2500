@@ -27,7 +27,16 @@ gulp.task('styles', () => {
     //.pipe(uncss({
       //html: './public/**/*.html'
     //}))
-    .pipe(browserSync.stream());
-    //.pipe(gulpif(browserSync.active, browserSync.reload({ stream: true })));
+    //.pipe(browserSync.stream());
+    .pipe(gulpif(browserSync.active, browserSync.reload({ stream: true })));
 
+    // Make this its own task
+
+
+
+});
+
+gulp.task('copy', function() {
+   gulp.src(config.src.images)
+   .pipe(gulp.dest(config.dest.images));
 });

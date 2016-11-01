@@ -5,36 +5,20 @@ import config      from '../config';
 
 gulp.task('browserSync', () =>  {
 
-
-// Declare the file to serve
-
-  const DEFAULT_FILE = 'index.html';
-  const ASSET_EXTENSION_REGEX = new RegExp(`\\b(?!\\?)\\.(${config.assetExtensions.join('|')})\\b(?!\\.)`, 'i');
-
 // New browserSync initiation
 
-  browserSync.init({
-    // Choose where to serve from
-    server: {
-      baseDir: config.dest.dir,
-      middleware: (req, res, next) => {
-        const fileHref = url.parse(req.url).href;
+//  browserSync.use(require('htmlInjector'), {
+  //  files: ['*.html']
+  //});
 
-        if ( !ASSET_EXTENSION_REGEX.test(fileHref)) {
-          req.url = '/' + DEFAULT_FILE;
-        }
+  const reload = browserSync.reload;
 
-        return next();
-      }
-    },
+     browserSync.init({
+          server: {
+                baseDir: config.dest.dir,
+                injectChanges: true
+          }
+     });
 
-    injectChanges: true,
-
-    // Options
-    port: config.browserPort,
-    ui: {
-      port: config.UIPort
-    }
-  });
-
+      //gulp.watch(config.src.styles).on('change', reload);
 });

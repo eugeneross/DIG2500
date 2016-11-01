@@ -12,6 +12,6 @@ gulp.task('dev', ['clean'], (cb) => {
 
 
   // Run our tasks in these sequences
-  return runSequence(['scripts', 'styles', 'pug', 'browserSync'], 'watch', cb);
+  return runSequence(['scripts', 'styles', 'pug', 'copy', 'browserSync'], 'watch', cb);
 
 });

@@ -1,3 +1,4 @@
+import gulp   from 'gulp';
 import notify from 'gulp-notify';
 
 export default (error) => {

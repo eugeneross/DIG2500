@@ -1,6 +1,5 @@
 import gulp        from 'gulp';
 import pug         from 'gulp-pug';
-import rename      from 'gulp-rename';
 import config      from '../config';
 import browserSync from 'browser-sync';
 
@@ -14,10 +13,7 @@ gulp.task('pug', function buildHTML() {
   .pipe(pug({
     pretty: true
   }))
-
-
   .pipe(gulp.dest(config.dest.dir))
-  .pipe(browserSync.stream());
-
+  .pipe(browserSync.reload({stream: true}));
 
 });

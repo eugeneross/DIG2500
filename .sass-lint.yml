@@ -1,4 +1,4 @@
-scss_files: './src/styles/**/*.sass'
+sass_files: './src/styles/**/*.sass'
 
 NestingDepth:
     enabled: true

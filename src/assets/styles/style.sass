@@ -1,0 +1,416 @@
+// Normalize Reset
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary
+  display: block
+
+audio, canvas, video
+  display: inline-block
+
+audio:not([controls])
+  display: none
+  height: 0
+
+[hidden]
+  display: none
+
+html
+  font-family: sans-serif
+  -ms-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%
+
+body
+  margin: 0
+
+a
+  &:focus
+    outline: thin dotted
+  &:active, &:hover
+    outline: 0
+
+h1
+  font-size: 2em
+  margin: 0.67em 0
+
+abbr[title]
+  border-bottom: 1px dotted
+
+b, strong
+  font-weight: bold
+
+dfn
+  font-style: italic
+
+hr
+  -moz-box-sizing: content-box
+  box-sizing: content-box
+  height: 0
+
+mark
+  background: #ff0
+  color: #000
+
+code, kbd, pre, samp
+  font-family: monospace, serif
+  font-size: 1em
+
+pre
+  white-space: pre-wrap
+
+q
+  quotes: "\201C" "\201D" "\2018" "\2019"
+
+small
+  font-size: 80%
+
+sub
+  font-size: 75%
+  line-height: 0
+  position: relative
+  vertical-align: baseline
+
+sup
+  font-size: 75%
+  line-height: 0
+  position: relative
+  vertical-align: baseline
+  top: -0.5em
+
+sub
+  bottom: -0.25em
+
+img
+  border: 0
+
+svg:not(:root)
+  overflow: hidden
+
+figure
+  margin: 0
+
+fieldset
+  border: 1px solid #c0c0c0
+  margin: 0 2px
+  padding: 0.35em 0.625em 0.75em
+
+legend
+  border: 0
+  padding: 0
+
+button, input, select, textarea
+  font-family: inherit
+  font-size: 100%
+  margin: 0
+
+button, input
+  line-height: normal
+
+button, select
+  text-transform: none
+
+button, html input[type="button"]
+  -webkit-appearance: button
+  cursor: pointer
+
+input
+  &[type="reset"], &[type="submit"]
+    -webkit-appearance: button
+    cursor: pointer
+
+button[disabled], html input[disabled]
+  cursor: default
+
+input
+  &[type="checkbox"], &[type="radio"]
+    box-sizing: border-box
+    padding: 0
+  &[type="search"]
+    -webkit-appearance: textfield
+    -moz-box-sizing: content-box
+    -webkit-box-sizing: content-box
+    box-sizing: content-box
+    &::-webkit-search-cancel-button, &::-webkit-search-decoration
+      -webkit-appearance: none
+
+button::-moz-focus-inner, input::-moz-focus-inner
+  border: 0
+  padding: 0
+
+textarea
+  overflow: auto
+  vertical-align: top
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+*
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+  &::after, &::before
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+
+body
+  font-family: 'Roboto Condensed', Avenir, sans-serif
+  color: #23DC74
+  background: #141516
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+main
+  overflow: hidden
+
+a
+  text-decoration: none
+  color: #f0f0f0
+  outline: none
+  &:hover, &:focus
+    color: #262626
+
+.hidden
+  position: absolute
+  overflow: hidden
+  width: 0
+  height: 0
+  pointer-events: none
+
+.btn
+  font-size: 0.885em
+  font-weight: normal
+  display: inline-block
+  margin: 0 auto
+  padding: 0.5em 0
+  cursor: pointer
+  text-align: center
+  letter-spacing: 2px
+  text-transform: uppercase
+  pointer-events: auto
+  color: #fff
+  border: 0
+  background: none
+  font-family: 'Roboto Condensed', Avenir, sans-serif
+  -webkit-transition: opacity 0.2s
+  transition: opacity 0.2s
+  &:focus
+    outline: none
+  &:hover
+    opacity: 0.5
+
+.btn--trigger
+  margin: 0 0.5em
+  border-bottom: 1px solid
+
+
+.btn--prev
+  margin: 0 1.5em 0 0.5em
+
+.btn--hidden
+  pointer-events: none
+  opacity: 0
+
+.actions
+  position: realtive
+  margin: 0 auto 60px auto
+  text-align: center
+
+.no-js .actions
+  display: none
+
+
+.js
+  .footer-block
+    position: fixed
+    z-index: 1000
+    top: 0
+    left: 0
+    text-align: center
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    width: 100%
+    height: 100%
+    pointer-events: none
+    opacity: 0
+
+.page-header
+  position: relative
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  width: 100%
+  height: 100vh
+  min-height: 500px
+  text-align: center
+  background: #141516
+
+.page-header__title
+  font-family: 'Abril Fatface', serif
+  font-size: 5vw
+  font-weight: 400
+  line-height: 1
+  letter-spacing: 0.05em
+  text-transform: uppercase
+  position: relative
+  z-index: 10
+  margin: 0
+  span
+    font-weight: normal
+    color: #f0f0f0
+
+
+.section-link
+  font-size: 1.25em
+  position: absolute
+  top: 60px
+  left: 6vw
+  cursor: pointer
+  color: #fff
+  -webkit-transition: opacity 0.2s
+  transition: opacity 0.2s
+  &:hover
+    opacity: 0.5
+    color: #fff
+
+.content
+  position: relative
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  width: 100vw
+  height: 100vh
+  min-height: 500px
+  padding: 7em 0
+
+.js .content
+  overflow: hidden
+
+.content--modifier
+  color: #141516
+  background: #e8e8f1
+  .btn--trigger, .section-link
+    color: #333
+
+
+.title
+  margin: 0
+  font-size: 10vw
+  position: relative
+
+.title--centered
+  width: 100%
+  text-align: center
+
+.js .title--centered
+  justify-content: center
+
+.title--modifier
+  font-family: 'Roboto Condensed', Avenir, sans-serif
+  font-weight: 400
+  letter-spacing: -0.25vw
+
+[class*="letter"]
+  display: block
+  position: relative
+  flex: none
+  white-space: pre
+
+.slideshow
+  position: relative
+  width: 100%
+  height: 100%
+
+.slide
+  position: relative
+  width: 100%
+  height: 100%
+  padding: 0 6vw
+
+.js .slide
+  display: flex
+  flex-direction: row
+  align-items: center
+  &:not(.slide--current)
+    position: absolute
+    top: 0
+    pointer-events: none
+    opacity: 0
+
+@media screen and (max-width: 60em)
+  .page-header
+    background: #141516
+  .page-header__title
+    font-size: 2.65em
+  .content--modifier2
+    display: none
+  .content
+    height: calc(100vh - 124px)
+
+.letter-effect
+  display: flex
+  flex-direction: row
+  align-items: center
+  flex-wrap: wrap
+
+.mouse
+  position: absolute
+  bottom: 40px
+  left: 0
+  right: 0
+  margin: 0 auto
+
+@-moz-keyframes bounce
+  0%, 20%, 50%, 80%, 100%
+    -moz-transform: translateY(0)
+    transform: translateY(0)
+
+  40%
+    -moz-transform: translateY(-30px)
+    transform: translateY(-30px)
+
+  60%
+    -moz-transform: translateY(-15px)
+    transform: translateY(-15px)
+
+
+@-webkit-keyframes bounce
+  0%, 20%, 50%, 80%, 100%
+    -webkit-transform: translateY(0)
+    transform: translateY(0)
+
+  40%
+    -webkit-transform: translateY(-30px)
+    transform: translateY(-30px)
+
+  60%
+    -webkit-transform: translateY(-15px)
+    transform: translateY(-15px)
+
+
+@keyframes bounce
+  0%, 20%, 50%, 80%, 100%
+    -moz-transform: translateY(0)
+    -ms-transform: translateY(0)
+    -webkit-transform: translateY(0)
+    transform: translateY(0)
+
+  40%
+    -moz-transform: translateY(-30px)
+    -ms-transform: translateY(-30px)
+    -webkit-transform: translateY(-30px)
+    transform: translateY(-30px)
+
+  60%
+    -moz-transform: translateY(-15px)
+    -ms-transform: translateY(-15px)
+    -webkit-transform: translateY(-15px)
+    transform: translateY(-15px)
+
+.bounce
+  -moz-animation: bounce 2s infinite
+  -webkit-animation: bounce 2s infinite
+  animation: bounce 2s infinite

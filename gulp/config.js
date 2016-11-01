@@ -1,6 +1,6 @@
 'use strict';
 
-// Define our paths here for easy reference. 
+// Define our paths here for easy reference.
 
 const config = {
 
@@ -13,13 +13,13 @@ const config = {
     views:  './src/views/**/*.pug',
     styles: './src/assets/styles/**/*.sass',
     js:     './src/assets/js/**/*.js',
-    images: './src/assets/images/**/*.{jpeg,jpg,png,gif}',
+    images: './src/assets/images/**/*.{jpeg,jpg,png,gif,svg}',
   },
 
   dest: {
     dir:    './public/',
     index:  './public/index.html',
-    views:  './src/public/**/*.html',
+    views:  './public/**/*.html',
     styles: './public/assets/styles/',
     js:     './public/assets/js/',
     images: './public/assets/images/',
