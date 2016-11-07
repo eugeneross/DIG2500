@@ -1,6 +1,26 @@
 (function() {
 
 
+  Element.prototype.remove = function() {
+    this.parentElement.removeChild(this);
+}
+NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
+    for (var i = this.length - 1; i >= 0; i--) {
+        if (this[i] && this[i].parentElement) {
+            this[i].parentElement.removeChild(this[i]);
+        }
+    }
+}
+
+  var isModernBrowser = navigator.userAgent.toLowerCase().indexOf('chrome') ||
+                        navigator.userAgent.toLowerCase().indexOf('safari') ||
+                        navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+
+  if (isModernBrowser) {
+    var chromeAlert = document.getElementsByClassName('browser-alert');
+    chromeAlert.remove();
+  }
+
   var bodyEl = document.body;
 
   var Slide = function(el) {

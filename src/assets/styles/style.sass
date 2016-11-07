@@ -185,7 +185,7 @@ a
   letter-spacing: 2px
   text-transform: uppercase
   pointer-events: auto
-  color: #fff
+  color: #F0F0F0 !important
   border: 0
   background: none
   font-family: 'Roboto Condensed', Avenir, sans-serif
@@ -193,8 +193,10 @@ a
   transition: opacity 0.2s
   &:focus
     outline: none
+    color: #23DC74
   &:hover
     opacity: 0.5
+
 
 .btn--trigger
   margin: 0 0.5em
@@ -209,7 +211,7 @@ a
   opacity: 0
 
 .actions
-  position: realtive
+  position: relative
   margin: 0 auto 60px auto
   text-align: center
 
@@ -261,19 +263,29 @@ a
     font-weight: normal
     color: #f0f0f0
 
+.browser-alert
+  background: #23DC74
+  height: 5vh
+  width: 100vw
+  position: relative
+  a
+    text-align: center
+    position: relative
+    margin: 0 auto
+    color: #141516
 
-.section-link
-  font-size: 1.25em
-  position: absolute
-  top: 60px
-  left: 6vw
-  cursor: pointer
-  color: #fff
-  -webkit-transition: opacity 0.2s
-  transition: opacity 0.2s
-  &:hover
-    opacity: 0.5
-    color: #fff
+
+.section-title
+  font-family: 'Abril Fatface', serif
+  font-size: 2em
+  relative
+  color: #e8e8f1 !important
+  text-transform: uppercase
+  letter-spacing: 0.05em
+  text-align: center
+
+span.green
+  color: #23DC74
 
 .content
   position: relative
@@ -284,15 +296,15 @@ a
   width: 100vw
   height: 100vh
   min-height: 500px
-  padding: 7em 0
+  padding: 4em 0 7em 0
 
 .js .content
   overflow: hidden
 
 .content--modifier
-  color: #141516
-  background: #e8e8f1
-  .btn--trigger, .section-link
+  color: #e8e8f1
+  background: #141516
+  .btn--trigger, .section-title
     color: #333
 
 
