@@ -12,7 +12,9 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
     }
 }
 
-  var isModernBrowser = navigator.userAgent.toLowerCase().indexOf('chrome')  > -1;
+  var isModernBrowser = navigator.userAgent.toLowerCase().indexOf('chrome') ||
+                        navigator.userAgent.toLowerCase().indexOf('safari') ||
+                        navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 
   if (isModernBrowser) {
     var chromeAlert = document.getElementsByClassName('browser-alert');
