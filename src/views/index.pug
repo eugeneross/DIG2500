@@ -14,29 +14,56 @@ html.no-js(lang='en')
             document.documentElement.className = 'js';
     body
       main
-        .browser-alert
+        //.browser-alert
           a(href="https://www.google.com/chrome/browser/desktop/index.html" target="_blank") For best viewing results use Google Chome.
         section#board.content.content--modifier
-            span.section-title
-              span.green 'Gotchas' in
-              |  Web Development
+            span.section-title Things you should know in
+              span.green.center.block  Web Development
             .slideshow.slideshow--modifier(data-effect='spring')
                 .slide.slide--current
-                    h2.title.title--centered.title--modifier Slide #1
+                    h2.title.title--centered.title--modifier Learn Shell Basics
+                    .text-block
+                      p A skill you should pick up on day one is being able to use the shell. Shells are used as the command line utility of many operating systems such as Unix, Linux, and Mac. The most common shell type is called Bash. A good portion of web development tutorials on the web will deal with the command line in one way or another, therefore it’s a key skill to have.
                 .slide
-                    h2.title.title--centered.title--modifier Slide #2
+                    h2.title.title--centered.title--modifier Learn Git
+                    .text-block
+                      p Git is the most popular tool for controlling the versions of your projects. It’s what’s being used for this project and millions more on the web. Git is a tool you should know especially if you plan on working on a team that shares a codebase. Knowing some of the basic commands such as ‘clone’, ‘pull’ and ‘push’ can only get you so far, but they should be a good starting point if you want to dive in deeper.
                 .slide
-                    h2.title.title--centered.title--modifier Slide #3
+                    h2.title.title--centered.title--modifier Learn a backend
+                    .text-block
+                      p A backend language usually runs on the server and contains logic you don’t expose to the user. Some languages that are consider a backend are, Java, NodeJS, PHP, Go, Ruby, and Python. Two very popular languages being used today are NodeJS and Go. Backend languages are very versatile and can be implemented into any front end you pick, which in most cases will be Javascript, HTML and CSS.
+
                 .slide
-                    h2.title.title--centered.title--modifier Slide #4
+                    h2.title.title--centered.title--modifier Learn Javascript
+                    .text-block
+                      p Learning Javascript is vital to when it comes to webpages. Webpages have a something called a DOM which is short for Document Object Model. The DOM refers to how the page is loaded and laid out in code. Javascript is considered the language of the DOM and enables you to manipulate the DOM in any way you can. Things such as loading events, adding animations, filling in content, adding and removing content are just some examples of what you can do to the DOM. Harnessing the power of the webpage will let you have control over it, therefore allow you to do whatever you please.
+
                 .slide
-                    h2.title.title--centered.title--modifier Slide #5
+                    h2.title.title--centered.title--modifier Use Browser Tools
+                    .text-block
+                      p Learning how to use your browser’s tools will help tremendously in planning out a webpage and debugging it. You can directly manipulate objects as well as use the console to help you with errors that might arise. Firefox was the first browser to introduce a tool called Firebug to help web developers out. Today, all modern web browsers have browser tools. Investing your time to learning these tools will save you tons of time and stress!
+
                 .slide
-                    h2.title.title--centered.title--modifier Slide #6
+                    h2.title.title--centered.title--modifier Pick an IDE
+                    .text-block
+                      p An IDE is an Integrated Development Environment, which is simply a text editor for developers. They allow you to visually organize your code and display your files in a tree format for easy navigation. A popular IDE today that is open source is called Atom. Atom, made by GitHub allows for the use of plugins which developers have written to help wit things such as shortcuts and workflow.
+
+                .slide
+                    h2.title.title--centered.title--modifier Be familiar with jQuery
+                    .text-block
+                      p While learning Javascript is great to have on your tool belt, using a Javascript framework called jQuery is also good to be knowledgable in. jQuery allows you use the same functionality Javascript has, but be able to write less code and sometimes even do more with it. jQuery follows a simple to use and read API that anyone dipping their toes in web development can use right away.
+
+                .slide
+                    h2.title.title--centered.title--modifier Write tests
+                    .text-block
+                      p With all the code you will be writing, it’s important to be testing your code in parallel. It’s a good habit to write tests for your code so that you can better understand how it’s working and so that you can be almost certain that it will not contain any bugs and be an issue for other pieces within your project. There are many testing frameworks out for selection for you to use based off of your language and framework you’re working in.
+
             nav.actions
                 button.btn.btn--trigger.btn--prev Previous
                 button.btn.btn--trigger.btn--next Next
-//.footer-block
+
+span.name Eugene Ross
+
 script(src='assets/js/charming.min.js')
 script(src='assets/js/anime.min.js')
 script(src='assets/js/scale.js')

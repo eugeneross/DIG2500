@@ -212,8 +212,9 @@ a
 
 .actions
   position: relative
-  margin: 0 auto 60px auto
+  margin: 0 auto 10px auto
   text-align: center
+
 
 .no-js .actions
   display: none
@@ -281,14 +282,30 @@ a
 .section-title
   font-family: 'Abril Fatface', serif
   font-size: 2em
-  relative
+  position: relative
   color: #e8e8f1 !important
   text-transform: uppercase
   letter-spacing: 0.05em
   text-align: center
+  @media screen and (max-width: 60em)
+    font-size: 1em
 
-span.green
-  color: #23DC74
+span
+  &.green
+    color: #23DC74
+    font-size: 3rem
+    @media screen and (max-width: 60em)
+      font-size: 2rem
+  &.center
+    text-align: center
+  &.block
+    display: block
+  &.name
+    position: absolute
+    bottom: 20px
+    right: 20px
+    font-size: 1.5rem
+
 
 .content
   position: relative
@@ -299,7 +316,9 @@ span.green
   width: 100vw
   height: 100vh
   min-height: 500px
-  padding: 4em 0 7em 0
+  padding: 2em 0 0 0
+  @media screen and (max-width: 60em)
+    padding: 4em 0 7em 0
 
 .js .content
   overflow: hidden
@@ -313,7 +332,7 @@ span.green
 
 .title
   margin: 0
-  font-size: 10vw
+  font-size: 6vw
   position: relative
 
 .title--centered
@@ -337,18 +356,48 @@ span.green
 .slideshow
   position: relative
   width: 100%
-  height: 100%
+  height: 50%
+  @media screen and (max-width: 60em)
+    height: 100%
 
 .slide
   position: relative
   width: 100%
-  height: 100%
+  height: 20%
   padding: 0 6vw
+
+.text-block
+    flex: 1 0 50%
+    max-width: 500px
+    background: #23DC74
+    padding: 0 10px 10px 0
+    z-index: 1
+    position: relative
+    margin-top: 30px
+    transition: opacity 1s
+    //opacity: 0
+    &:after
+      content: ''
+      background: #2a9a4a
+      width: 500px
+      top: -10px
+      right: 10px
+      bottom: 10px
+      left: -10px
+      z-index: -1
+      //display: block
+      position: absolute
+    p
+      text-align: left
+      margin-top: 0
+
 
 .js .slide
   display: flex
   flex-direction: row
   align-items: center
+  justify-content: center
+  flex-wrap: wrap
   &:not(.slide--current)
     position: absolute
     top: 0
@@ -370,62 +419,3 @@ span.green
   flex-direction: row
   align-items: center
   flex-wrap: wrap
-
-.mouse
-  position: absolute
-  bottom: 40px
-  left: 0
-  right: 0
-  margin: 0 auto
-
-@-moz-keyframes bounce
-  0%, 20%, 50%, 80%, 100%
-    -moz-transform: translateY(0)
-    transform: translateY(0)
-
-  40%
-    -moz-transform: translateY(-30px)
-    transform: translateY(-30px)
-
-  60%
-    -moz-transform: translateY(-15px)
-    transform: translateY(-15px)
-
-
-@-webkit-keyframes bounce
-  0%, 20%, 50%, 80%, 100%
-    -webkit-transform: translateY(0)
-    transform: translateY(0)
-
-  40%
-    -webkit-transform: translateY(-30px)
-    transform: translateY(-30px)
-
-  60%
-    -webkit-transform: translateY(-15px)
-    transform: translateY(-15px)
-
-
-@keyframes bounce
-  0%, 20%, 50%, 80%, 100%
-    -moz-transform: translateY(0)
-    -ms-transform: translateY(0)
-    -webkit-transform: translateY(0)
-    transform: translateY(0)
-
-  40%
-    -moz-transform: translateY(-30px)
-    -ms-transform: translateY(-30px)
-    -webkit-transform: translateY(-30px)
-    transform: translateY(-30px)
-
-  60%
-    -moz-transform: translateY(-15px)
-    -ms-transform: translateY(-15px)
-    -webkit-transform: translateY(-15px)
-    transform: translateY(-15px)
-
-.bounce
-  -moz-animation: bounce 2s infinite
-  -webkit-animation: bounce 2s infinite
-  animation: bounce 2s infinite

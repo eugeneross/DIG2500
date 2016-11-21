@@ -33,6 +33,7 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
       this.current = 0;
       this.slides = [];
       var self = this;
+      
       [].slice.call(this.el.querySelectorAll('.slide')).forEach(function(slide) {
         self.slides.push(new Slide(slide));
       });
