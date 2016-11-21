@@ -366,6 +366,24 @@ span
   height: 20%
   padding: 0 6vw
 
+
+.slide--current > .text-block
+  -webkit-animation-name: bounceInUp
+  animation-name: bounceInUp
+  -webkit-animation-duration: 1s
+  animation-duration: 1s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+  opacity: 1
+
+//.slide > .text-block
+  -webkit-animation-name: fadeOutDown
+  animation-name: fadeOutDown
+  -webkit-animation-duration: 1s
+  animation-duration: 1s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+
 .text-block
     flex: 1 0 50%
     max-width: 500px
@@ -374,8 +392,8 @@ span
     z-index: 1
     position: relative
     margin-top: 30px
-    transition: opacity 1s
-    //opacity: 0
+    //transition: opacity 1s
+    opacity: 0
     &:after
       content: ''
       background: #2a9a4a
@@ -390,6 +408,7 @@ span
     p
       text-align: left
       margin-top: 0
+      padding-right: 10px
 
 
 .js .slide
@@ -419,3 +438,92 @@ span
   flex-direction: row
   align-items: center
   flex-wrap: wrap
+
+.animated
+  -webkit-animation-duration: 1s
+  animation-duration: 1s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+
+@-webkit-keyframes bounceInUp
+  from, 60%, 75%, 90%, to
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+
+  from
+    opacity: 0
+    -webkit-transform: translate3d(0, 3000px, 0)
+    transform: translate3d(0, 3000px, 0)
+
+  60%
+    opacity: 1
+    -webkit-transform: translate3d(0, -20px, 0)
+    transform: translate3d(0, -20px, 0)
+
+  75%
+    -webkit-transform: translate3d(0, 10px, 0)
+    transform: translate3d(0, 10px, 0)
+
+  90%
+    -webkit-transform: translate3d(0, -5px, 0)
+    transform: translate3d(0, -5px, 0)
+
+  to
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+
+@keyframes bounceInUp
+  from, 60%, 75%, 90%, to
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+
+  from
+    opacity: 0
+    -webkit-transform: translate3d(0, 3000px, 0)
+    transform: translate3d(0, 3000px, 0)
+
+  60%
+    opacity: 1
+    -webkit-transform: translate3d(0, -20px, 0)
+    transform: translate3d(0, -20px, 0)
+
+  75%
+    -webkit-transform: translate3d(0, 10px, 0)
+    transform: translate3d(0, 10px, 0)
+
+  90%
+    -webkit-transform: translate3d(0, -5px, 0)
+    transform: translate3d(0, -5px, 0)
+
+  to
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+.bounceInUp
+  -webkit-animation-name: bounceInUp
+  animation-name: bounceInUp
+
+@-webkit-keyframes fadeOutDown
+  from
+    opacity: 1
+
+  to
+    opacity: 0
+    -webkit-transform: translate3d(0, 100%, 0)
+    transform: translate3d(0, 100%, 0)
+
+
+@keyframes fadeOutDown
+  from
+    opacity: 1
+
+  to
+    opacity: 0
+    -webkit-transform: translate3d(0, 100%, 0)
+    transform: translate3d(0, 100%, 0)
+
+
+.fadeOutDown
+  -webkit-animation-name: fadeOutDown
+  animation-name: fadeOutDown

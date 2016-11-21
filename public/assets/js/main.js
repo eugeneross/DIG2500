@@ -33,7 +33,7 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
       this.current = 0;
       this.slides = [];
       var self = this;
-      
+
       [].slice.call(this.el.querySelectorAll('.slide')).forEach(function(slide) {
         self.slides.push(new Slide(slide));
       });
@@ -130,7 +130,7 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
       return curveY(t2);
     };
   };
-  var duration = 500,
+  var duration = 1000,
     epsilon = (1000 / 60 / duration) / 4,
     easing1 = bezier(0.1, 1, 0.9, 1, epsilon);
   anime.easings['myCustomEasing'] = function(t) {

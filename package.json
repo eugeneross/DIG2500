@@ -13,7 +13,9 @@
   },
   "author": "eugeneross <e@eugeneross.com>",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "animate.css": "^3.5.2"
+  },
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-core": "^6.18.0",

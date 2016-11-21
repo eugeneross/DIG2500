@@ -451,7 +451,14 @@ span.name {
   height: 20%;
   padding: 0 6vw; }
 
-/* line 369, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+/* line 370, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+.slide--current > .text-block {
+  animation-name: bounceInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  opacity: 1; }
+
+/* line 387, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
 .text-block {
   -ms-flex: 1 0 50%;
       flex: 1 0 50%;
@@ -461,8 +468,8 @@ span.name {
   z-index: 1;
   position: relative;
   margin-top: 30px;
-  transition: opacity 1s; }
-  /* line 379, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+  opacity: 0; }
+  /* line 397, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
   .text-block:after {
     content: '';
     background: #2a9a4a;
@@ -473,12 +480,13 @@ span.name {
     left: -10px;
     z-index: -1;
     position: absolute; }
-  /* line 390, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+  /* line 408, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
   .text-block p {
     text-align: left;
-    margin-top: 0; }
+    margin-top: 0;
+    padding-right: 10px; }
 
-/* line 395, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+/* line 414, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
 .js .slide {
   display: -ms-flexbox;
   display: flex;
@@ -490,7 +498,7 @@ span.name {
       justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  /* line 401, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+  /* line 420, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
   .js .slide:not(.slide--current) {
     position: absolute;
     top: 0;
@@ -498,20 +506,20 @@ span.name {
     opacity: 0; }
 
 @media screen and (max-width: 60em) {
-  /* line 408, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+  /* line 427, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
   .page-header {
     background: #141516; }
-  /* line 410, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+  /* line 429, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
   .page-header__title {
     font-size: 2.65em; }
-  /* line 412, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+  /* line 431, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
   .content--modifier2 {
     display: none; }
-  /* line 414, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+  /* line 433, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
   .content {
     height: calc(100vh - 124px); } }
 
-/* line 417, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+/* line 436, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
 .letter-effect {
   display: -ms-flexbox;
   display: flex;
@@ -521,5 +529,41 @@ span.name {
       align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+
+/* line 442, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both; }
+
+@keyframes bounceInUp {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  from {
+    opacity: 0;
+    transform: translate3d(0, 3000px, 0); }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, -20px, 0); }
+  75% {
+    transform: translate3d(0, 10px, 0); }
+  90% {
+    transform: translate3d(0, -5px, 0); }
+  to {
+    transform: translate3d(0, 0, 0); } }
+
+/* line 503, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+.bounceInUp {
+  animation-name: bounceInUp; }
+
+@keyframes fadeOutDown {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0); } }
+
+/* line 527, /Users/eugeneross/Sites/DIG2500/src/assets/styles/style.sass */
+.fadeOutDown {
+  animation-name: fadeOutDown; }
 
 /*# sourceMappingURL=style.css.map */
